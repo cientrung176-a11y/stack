@@ -6,5 +6,6 @@ pynput==1.7.6
 mss==9.0.1
 pyperclip==1.9.0
 gunicorn==21.2.0
-eventlet==0.35.2
+gevent
+gevent-websocket
 # pywin32==306     ← giữ comment hoặc xóa vì đây là server
