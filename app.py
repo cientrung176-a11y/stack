@@ -15,10 +15,9 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'supersecretkey'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-# Encryption setup
 cipher_suite = Fernet(base64.urlsafe_b64encode(b'abcdefghijklmnopqrstuvwxyz123456'))
 
-# Store clients and their metadata
+
 clients = {}
 
 @app.route('/')
